@@ -1,16 +1,97 @@
-# React + Vite
+# Lunagrid
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive two-panel layout featuring interactive text widget and a controlled image gallery navigated through buttons. Designed for clarity, scalability, and a professional user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Project Overview
 
-## React Compiler
+**Lunagrid** is a React-based layout project demonstrating a modern two-panel interface.  
+The layout adapts seamlessly to different screen sizes, showcasing:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Text Widget** – a tabbed widget for displaying different content sections.
+- **Gallery Widget** – an image gallery that can be navigated using “Prev” and “Next” buttons, with an option to add new images dynamically.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Features
+
+- Responsive two-panel layout
+- Interactive text widget
+- Button-based image gallery navigation
+- Dynamic image addition functionality
+- Clean and minimal UI
+
+---
+
+## 📁 Project Structure
+
+```bash
+lunagrid/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── Profile.jsx
+│   ├── Widget/
+│   │   ├── Widgets.jsx
+│   │   ├── TextWidget.jsx
+│   │   └── LogoGalleryWidget.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── vite.config.js
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/lunagrid.git
+cd lunagrid
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+---
+
+## 💡 Usage
+
+1. The app displays a two-panel layout.
+
+2. The **Text Widget** allows users to toggle between multiple content sections.
+
+3. The **Gallery Widget** enables image browsing using **Prev** and **Next** buttons and supports adding new images dynamically.
+
+---
+
+## 🧠 Concepts Demonstrated
+
+- Modular, component-based UI
+
+- Responsive layout design
+
+- State management with React hooks
+
+- Controlled user interactions via buttons
+
+---
+
+## Credits
+
+**Author:** Anurag Dabbiru - [Devopslayer](https://github.com/Devopslayer)
+**Project:** Lunagrid (Assignment Project)
+**Description:** Responsive two-panel layout featuring a text widget and a button-controlled image gallery.
