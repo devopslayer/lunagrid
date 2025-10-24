@@ -10,7 +10,6 @@ const TAB_CONTENT = {
 
 function TextWidget() {
   const [key, setKey] = useState("about");
-  const content = TAB_CONTENT[key];
 
   return (
     <section className="text-widget" aria-label="Information Tabs">
