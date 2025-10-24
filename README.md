@@ -33,11 +33,15 @@ lunagrid/
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   │   ├── Profile.jsx
 │   │   ├── Widget/
+│   │   │   ├── LogoGalleryWidget.css
 │   │   │   ├── LogoGalleryWidget.jsx
+│   │   │   ├── TextWidget.css
 │   │   │   ├── TextWidget.jsx
+│   │   │   ├── Widgets.css
 │   │   │   └── Widgets.jsx
+│   │   ├── Profile.css
+│   │   └── Profile.jsx
 │   ├── App.css
 │   ├── App.jsx
 │   ├── index.css
