@@ -1,0 +1,15 @@
+.app-container {
+  padding: 0;
+  background-color: var(--color-background);
+}
+
+.profile-section {
+  background-color: var(--color-tertiary);
+  min-height: 200px;
+}
+
+.widgets-section {
+  background-color: var(--color-surface);
+  padding: 1.5rem;
+  overflow-y: auto;
+}

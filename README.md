@@ -29,14 +29,15 @@ The layout adapts seamlessly to different screen sizes, showcasing:
 ```bash
 lunagrid/
 ├── public/
+│   ├── glide.svg
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   ├── Profile.jsx
-│   ├── Widget/
-│   │   ├── Widgets.jsx
-│   │   ├── TextWidget.jsx
-│   │   └── LogoGalleryWidget.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Widget/
+│   │   │   ├── LogoGalleryWidget.jsx
+│   │   │   ├── TextWidget.jsx
+│   │   │   └── Widgets.jsx
 │   ├── App.css
 │   ├── App.jsx
 │   ├── index.css

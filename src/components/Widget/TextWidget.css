@@ -1,0 +1,5 @@
+.text-widget p {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: var(--color-text);
+}
