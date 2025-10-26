@@ -5,13 +5,9 @@ import "./Widgets.css";
 
 function Widgets() {
   return (
-    <section className="widgets-container">
-      <article>
-        <TextWidget />
-      </article>
-      <article>
-        <LogoGalleryWidget />
-      </article>
+    <section className="widgets-wrapper d-flex flex-column justify-content-between">
+      <TextWidget />
+      <LogoGalleryWidget />
     </section>
   );
 }

@@ -1,5 +1,106 @@
-.text-widget p {
-  margin: 0;
-  padding: 0.5rem 0;
-  color: var(--color-text);
+.text-widget {
+  width: 100%;
+  background: var(--textwidget-bg);
+  box-shadow: var(--shadow-md);
+  border-radius: 18.89px;
+  padding: 1rem;
+}
+
+.text-widget .icon-column {
+  width: 24px;
+  gap: 6rem;
+}
+
+.text-widget .info-icon, .text-widget .grid-icon {
+  color: #4a4e54;
+  cursor: pointer;
+}
+
+.text-widget .info-icon {
+  font-size: 1.5rem;
+}
+
+.text-widget .grid-icon {
+  font-size: 1.8rem;
+  border-radius: 2.33px;
+}
+
+.text-widget .custom-tabs.nav-tabs {
+  border-bottom: none !important;
+  background: var(--textwidget-tab-bg) !important;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-inner);
+  gap: 0.5rem;
+  overflow: visible !important;
+  margin-bottom: 1rem !important;
+  padding: 0.3rem !important;
+  position: relative;
+  z-index: 1;
+}
+
+.text-widget .custom-tabs.nav-tabs .nav-link {
+  border: none !important;
+  border-bottom: none !important;
+  border-radius: var(--radius-sm);
+  background: transparent !important;
+  color: var(--text-muted) !important;
+  transition: color 0.3s ease;
+  margin-bottom: 0 !important;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.text-widget .custom-tabs.nav-tabs .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  transition: width 0.4s ease;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.text-widget .custom-tabs.nav-tabs .nav-link:hover::before {
+  width: 100%;
+}
+
+.text-widget .custom-tabs.nav-tabs .nav-link:hover {
+  color: white !important;
+}
+
+.text-widget .custom-tabs.nav-tabs .nav-link.active {
+  background: var(--tab-active-bg) !important;
+  box-shadow: -8.43px -16.87px 50.6px -16.87px #485b71,
+    13.49px 16.87px 67.47px 8.43px #0a0a0a;
+  border-radius: var(--radius-sm);
+  color: white !important;
+  border: none !important;
+  z-index: 3;
+}
+
+.text-widget .custom-tabs.nav-tabs .nav-link.active::before {
+  display: none;
+}
+
+.text-widget .tab-content-box {
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+  max-height: 180px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  line-height: 1.7;
+  padding-right: 0.5rem;
+}
+
+.text-widget .tab-content-box::-webkit-scrollbar {
+  width: 5px;
+}
+
+.text-widget .tab-content-box::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 5px;
 }

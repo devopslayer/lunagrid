@@ -3,10 +3,9 @@ import "./Profile.css";
 
 function Profile() {
   return (
-    <section
-      className="profile-placeholder"
-      aria-label="Profile Section"
-    ></section>
+    <section className="profile-placeholder" aria-label="Profile Section">
+      <div className="profile-inner"></div>
+    </section>
   );
 }
 

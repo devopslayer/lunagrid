@@ -1,37 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-bg: #e9eaec;
+  --gradient-main: linear-gradient(180deg, #3b3f43 0%, #0e0e10 100%);
 
-  --color-primary: #007bff;
-  --color-secondary: #6c757d;
-  --color-tertiary: #f0f0f0;
-  --color-accent: #0d6efd;
-  --color-background: #f5f5f5;
-  --color-surface: #ffffff;
-  --color-border: #dddddd;
-  --color-text: #333333;
-  --color-text-light: #666666;
-  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --left-panel-bg: rgba(128, 128, 128, 0.5);
+  --left-panel-border: #a8c7ee;
+
+  --textwidget-bg: linear-gradient(180deg, #4a525a 0%, #2f3439 100%);
+  --textwidget-tab-bg: #1b1c1f;
+  --tab-active-bg: #2d2f36;
+
+  --gallery-button-bg: linear-gradient(180deg, #35393f 0%, #17191b 100%);
+  --gallery-image-bg: rgba(0, 0, 0, 0.25);
+
+  --text-muted: #9b9b9b;
+  --text-regular: #d8d8d8;
+  --text-strong: #ffffff;
+
+  --shadow-lg: 12px 12px 40px rgba(0, 0, 0, 0.55),
+    -8px -8px 20px rgba(255, 255, 255, 0.05);
+  --shadow-md: 6px 6px 16px rgba(0, 0, 0, 0.45),
+    -4px -4px 12px rgba(255, 255, 255, 0.08);
+  --shadow-inner: inset 0 5px 12px rgba(0, 0, 0, 0.3),
+    inset 0 -3px 8px rgba(255, 255, 255, 0.05);
+
+  --radius-lg: 28px;
+  --radius-md: 23px;
+  --radius-sm: 16px;
+
+  --font-main: "Poppins", sans-serif;
 }
 
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background: var(--gradient-main);
+  color: #333;
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+.dash {
+  display: block;
+  width: 80%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--text-muted);
 }
